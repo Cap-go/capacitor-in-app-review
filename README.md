@@ -1,8 +1,27 @@
 # @capgo/capacitor-in-app-review
+ <a href="https://capgo.app/"><img src='https://raw.githubusercontent.com/Cap-go/capgo/main/assets/capgo_banner.png' alt='Capgo - Instant updates for capacitor'/></a>
+
+<div align="center">
+  <h2><a href="https://capgo.app/?ref=plugin_in_app_review"> ➡️ Get Instant updates for your App with Capgo</a></h2>
+  <h2><a href="https://capgo.app/consulting/?ref=plugin_in_app_review"> Missing a feature? We'll build the plugin for you 💪</a></h2>
+</div>
 
 Prompt users to submit app store ratings and reviews without leaving your app.
 
-This plugin uses the native in-app review APIs provided by Apple (SKStoreReviewController) and Google (Play In-App Review API) to show a review dialog within your app.
+## Why Capacitor In-App Review?
+
+The simplest way to request **native app store reviews** on both iOS and Android:
+
+- **iOS SKStoreReviewController** - Native App Store review dialog
+- **Android Play In-App Review API** - Native Google Play review flow
+- **No redirects** - Users stay in your app while reviewing
+- **Platform compliant** - Follows Apple and Google guidelines automatically
+
+Essential for improving your app's ratings and visibility on the stores.
+
+## Documentation
+
+For complete documentation, visit: https://capgo.app/docs/plugins/in-app-review/
 
 ## Install
 
@@ -20,9 +39,7 @@ import { CapgoInAppReview } from '@capgo/capacitor-in-app-review';
 await CapgoInAppReview.requestReview();
 ```
 
-## Important Notes
-
-### Platform Guidelines
+## Platform Guidelines
 
 Both Apple and Google have strict guidelines about when and how often the review dialog can be shown:
 
@@ -30,21 +47,10 @@ Both Apple and Google have strict guidelines about when and how often the review
 - The system may or may not show the review dialog based on App Store policy
 - You should not call `requestReview()` in response to a button tap
 - The system automatically limits the display of the prompt to 3 times within a 365-day period
-- [Apple Guidelines](https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews)
 
 **Android:**
 - Google Play enforces a quota on how often a user can be shown the review dialog
 - The API might not show the dialog if the quota has been reached
-- [Google Play Guidelines](https://developer.android.com/guide/playcore/in-app-review)
-
-### Testing
-
-**iOS:**
-- The review dialog will not be shown when testing via Xcode
-- Use TestFlight or the App Store for testing
-
-**Android:**
-- Use internal app sharing or internal test track
 - The dialog will not be shown in debug builds
 
 ## API
@@ -101,11 +107,3 @@ Get the native Capacitor plugin version.
 --------------------
 
 </docgen-api>
-
-## License
-
-MIT
-
-## Credits
-
-This plugin is maintained by [Capgo](https://capgo.app).
