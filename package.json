@@ -24,6 +24,7 @@
   "bugs": {
     "url": "https://github.com/Cap-go/capacitor-in-app-review/issues"
   },
+  "homepage": "https://capgo.app/docs/plugins/in-app-review/",
   "keywords": [
     "capacitor",
     "plugin",
