@@ -1,6 +1,6 @@
 {
   "name": "@capgo/capacitor-in-app-review",
-  "version": "8.1.0",
+  "version": "8.1.1",
   "description": "Prompt users to submit app store ratings and reviews without leaving your app",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
