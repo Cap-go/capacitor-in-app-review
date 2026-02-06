@@ -20,11 +20,11 @@ public class CapgoInAppReviewPlugin extends Plugin {
         ReviewManager manager = ReviewManagerFactory.create(getContext());
         Task<ReviewInfo> request = manager.requestReviewFlow();
 
-        request.addOnCompleteListener(task -> {
+        request.addOnCompleteListener((task) -> {
             if (task.isSuccessful()) {
                 ReviewInfo reviewInfo = task.getResult();
                 Task<Void> flow = manager.launchReviewFlow(getActivity(), reviewInfo);
-                flow.addOnCompleteListener(reviewTask -> {
+                flow.addOnCompleteListener((reviewTask) -> {
                     // The flow has finished. The API does not indicate whether
                     // the user reviewed or not, so we always resolve successfully.
                     call.resolve();
