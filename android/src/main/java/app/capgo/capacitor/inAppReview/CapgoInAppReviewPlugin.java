@@ -13,7 +13,7 @@ import com.google.android.play.core.review.ReviewManagerFactory;
 @CapacitorPlugin(name = "CapgoInAppReview")
 public class CapgoInAppReviewPlugin extends Plugin {
 
-    private final String pluginVersion = "8.1.1";
+    private final String pluginVersion = "8.1.2";
 
     @PluginMethod
     public void requestReview(PluginCall call) {
