@@ -10,7 +10,7 @@ import StoreKit
  */
 @objc(CapgoInAppReviewPlugin)
 public class CapgoInAppReviewPlugin: CAPPlugin, CAPBridgedPlugin {
-    private let pluginVersion: String = "8.2.3"
+    private let pluginVersion: String = "8.2.4"
     public let identifier = "CapgoInAppReviewPlugin"
     public let jsName = "CapgoInAppReview"
     public let pluginMethods: [CAPPluginMethod] = [
