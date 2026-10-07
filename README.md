@@ -1,12 +1,27 @@
 # @capgo/capacitor-in-app-review
-<a href="https://capgo.app/"><img src="https://capgo.app/readme-banner.svg?repo=Cap-go/capacitor-in-app-review" alt="Capgo - Instant updates for Capacitor" /></a>
+
+Ask users for an App Store or Google Play rating without leaving your app, with the official in-app review prompts.
+
+<a href="https://capgo.app/?ref=plugin_in_app_review"><img src="https://capgo.app/readme-banner.svg?repo=Cap-go/capacitor-in-app-review" alt="Capgo - Instant updates for Capacitor" /></a>
 
 <div align="center">
-  <h2><a href="https://capgo.app/?ref=plugin_in_app_review"> ➡️ Get Instant updates for your App with Capgo</a></h2>
-  <h2><a href="https://capgo.app/consulting/?ref=plugin_in_app_review"> Missing a feature? We'll build the plugin for you 💪</a></h2>
+  <p><b>Capgo</b>: open-source live updates for Ionic and Capacitor apps. Ship OTA fixes and features instantly, without waiting for app store review.</p>
+  <h2><a href="https://capgo.app/register/?ref=plugin_in_app_review">➡️ Get started for free</a></h2>
+  <p>14-day unlimited free trial. No credit card required</p>
+  <p><a href="https://capgo.app/consulting/?ref=plugin_in_app_review">Missing a feature? We'll build the plugin for you 💪</a></p>
 </div>
 
-Prompt users to submit app store ratings and reviews without leaving your app.
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Cap-go/capacitor-in-app-review/main/assets/github-social-preview.png" alt="@capgo/capacitor-in-app-review for Capacitor apps" width="300" />
+</p>
+
+## Key features
+
+- **One call**: `requestReview()` shows the native review prompt.
+- **iOS**: uses StoreKit's review request.
+- **Android**: uses the Google Play In-App Review API.
+- **Store rules apply**: the OS decides when the prompt is actually shown.
+- **Platforms**: iOS and Android. On web, `requestReview()` does nothing.
 
 ## Why Capacitor In-App Review?
 
