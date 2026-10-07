@@ -17,7 +17,7 @@ Ask users for an App Store or Google Play rating without leaving your app, with 
 
 ## Key features
 
-- **One call**: `requestReview()` shows the native review prompt.
+- **One call**: `requestReview()` requests the native review prompt.
 - **iOS**: uses StoreKit's review request.
 - **Android**: uses the Google Play In-App Review API.
 - **Store rules apply**: the OS decides when the prompt is actually shown.
